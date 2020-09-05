@@ -9,7 +9,7 @@ const messages = [
   },
   {
     text: "Feel free to play around and see how it works!",
-    user: "User 2",
+    user: "Admin",
     added: new Date()
   }
 ];
