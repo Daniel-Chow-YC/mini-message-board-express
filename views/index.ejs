@@ -3,6 +3,8 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-ztQCCdmKhYHBDMV3AyR4QGZ2/z6veowJBbsmvDJW/sTuMpB9lpoubJuD0ODGSbjh"
+    crossorigin="anonymous">
   </head>
   <body>
     <h1><%= title %></h1>
@@ -14,7 +16,7 @@
       <br>
     <% }); %>
 
-    <li><a href="new">New Message</a></li>
+    <a class="btn btn-primary" href="/new">Add a Message</a>
 
   </body>
 </html>

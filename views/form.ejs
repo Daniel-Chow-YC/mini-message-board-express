@@ -2,18 +2,23 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-ztQCCdmKhYHBDMV3AyR4QGZ2/z6veowJBbsmvDJW/sTuMpB9lpoubJuD0ODGSbjh"
+    crossorigin="anonymous">
   </head>
   <body>
     <h1><%= title %></h1>
 
     <form method="POST" action="/new">
       <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br>
-      <label for="msg">Message:</label><br>
-      <input type="text" id="msg" name="msg"><br>
+      <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name here..."><br>
       <br>
-      <input type="submit" value="Submit">
-        
+      <label for="msg">Message:</label><br>
+      <textarea class="form-control" type="text" id="msg" name="msg" rows="3" placeholder="Enter your message here..."></textarea><br>
+      <br>
+      <input type="submit" class="btn btn-primary" value="Submit">
+      
+
     </form>
  
 
