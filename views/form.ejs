@@ -1,18 +1,18 @@
 <%- include partials/head.ejs -%>
   <body>
     <h1><%= title %></h1>
+    <div id="container">
+      <form method="POST" action="/new">
+        <label for="name">Name:</label><br>
+        <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name here..." required><br>
+        <br>
+        <label for="msg">Message:</label><br>
+        <textarea class="form-control" type="text" id="msg" name="msg" rows="3" placeholder="Enter your message here..." required></textarea><br>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Submit">
 
-    <form method="POST" action="/new">
-      <label for="name">Name:</label><br>
-      <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name here..."><br>
-      <br>
-      <label for="msg">Message:</label><br>
-      <textarea class="form-control" type="text" id="msg" name="msg" rows="3" placeholder="Enter your message here..."></textarea><br>
-      <br>
-      <input type="submit" class="btn btn-primary" value="Submit">
-      
-
-    </form>
+      </form>
+    </div>
  
 
   </body>

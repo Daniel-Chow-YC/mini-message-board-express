@@ -1,15 +1,26 @@
 <%- include partials/head.ejs -%>
   <body>
     <h1><%= title %></h1>
+    <br>
+    
     <% messages.forEach(message => { %>
-
-      <p><%= message.user %></p>
-      <p><%= message.text %></p>
-      <p> <%= message.added %></p>
-      <br>
+      
+      <div id="container">
+        <div class="card text-center">
+          <div class="card-body">
+            <h4 class="card-title"><%= message.text %></h4>
+            <h5 class="card-text text-capitalize font-italic text-right">- <%= message.user %></h5>
+            <p id="date"> <%= message.added %></p>
+          
+          </div>
+        </div>
+      </div>
+   
+    
     <% }); %>
 
     <a class="btn btn-primary" href="/new">Add a Message</a>
 
   </body>
 </html>
+

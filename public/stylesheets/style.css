@@ -7,3 +7,19 @@ a {
   color: #00B7FF;
 }
 
+h1 {
+  text-align: center;
+  color: rgb(19, 52, 122);
+}
+
+#date {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  opacity: 0.75;
+}
+
+#container {
+  width: 60%;
+  margin: auto;
+}
+
